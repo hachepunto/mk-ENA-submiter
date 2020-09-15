@@ -1,0 +1,5 @@
+#!/bin/bash
+
+find -L data/ -name '*.manifest' \
+	| sed -e 's/data/results/' \
+		-e 's/\.manifest/.ok/'
